@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/addpet_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pet Information"
+            android:textSize="35dp"/>
+
+        <ImageView
+            android:id="@+id/addpet_circle"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/splash_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addpet_title" />
+
+        <ImageView
+            android:id="@+id/addpet_bone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bone"
+            app:layout_constraintBottom_toBottomOf="@+id/addpet_circle"
+            app:layout_constraintEnd_toEndOf="@+id/addpet_circle"
+            app:layout_constraintStart_toStartOf="@+id/addpet_circle"
+            app:layout_constraintTop_toTopOf="@+id/addpet_circle" />
+
+        <EditText
+            android:id="@+id/addpet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 적어주세요"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/addpet_circle"/>
+
+        <EditText
+            android:id="@+id/addpet_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="나이를 적어주세요"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/addpet_name"/>
+
+        <EditText
+            android:id="@+id/addpet_kind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="종(kind)을 적어주세요"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/addpet_age"/>
+
+        <RadioGroup
+            android:id="@+id/addpet_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/addpet_kind">
+
+            <RadioButton
+                android:id="@+id/addpet_radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남"/>
+
+            <RadioButton
+                android:id="@+id/addpet_radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="여"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addpet_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="확인"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addpet_radio" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

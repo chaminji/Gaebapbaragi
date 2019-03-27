@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/main_fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_spinner">
+
+        <ImageButton
+            android:id="@+id/main_meal"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/main_square"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/main_snack"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/main_square"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_snack"
+            app:layout_constraintStart_toEndOf="@+id/main_meal" />
+
+        <ImageButton
+            android:id="@+id/main_drug"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/main_square"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_drug"
+            app:layout_constraintTop_toBottomOf="@+id/main_meal" />
+
+        <ImageButton
+            android:id="@+id/main_others"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/main_square"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_others"
+            app:layout_constraintStart_toEndOf="@+id/main_drug"
+            app:layout_constraintTop_toBottomOf="@+id/main_snack" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/main_add"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
