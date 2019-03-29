@@ -5,6 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,13 +30,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton ibtn_main_meal = findViewById(R.id.main_meal);
-        Glide.with(this).load(this.getResources().getIdentifier("main_meal", "drawable", this.getPackageName())).into(ibtn_main_meal);
-
         ImageButton ibtn_main_snack = findViewById(R.id.main_snack);
         ImageButton ibtn_main_drug = findViewById(R.id.main_drug);
         ImageButton ibtn_main_others = findViewById(R.id.main_others);
         FloatingActionButton main_fab = findViewById(R.id.main_fab);
         Spinner spinner = findViewById(R.id.main_spinner);
+
+        Glide.with(this).load(this.getResources().getIdentifier("main_meal", "drawable", this.getPackageName())).into(ibtn_main_meal);
+        Glide.with(this).load(this.getResources().getIdentifier("main_snack", "drawable", this.getPackageName())).into(ibtn_main_snack);
+        Glide.with(this).load(this.getResources().getIdentifier("main_drug", "drawable", this.getPackageName())).into(ibtn_main_drug);
+        Glide.with(this).load(this.getResources().getIdentifier("main_others", "drawable", this.getPackageName())).into(ibtn_main_others);
 
         ibtn_main_meal.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -65,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,InformationActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        main_fab.setOnClickListener(new FloatingActionButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 

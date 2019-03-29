@@ -9,25 +9,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginVertical="7.5dp">
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark">
 
         <TextView
             android:id="@+id/cardview_drug_text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
             android:text="약 이름"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toTopOf="@+id/cardview_drug_text2" />
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_drug_text2"/>
 
         <TextView
             android:id="@+id/cardview_drug_text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
             android:text="복용 날짜"
-            android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@id/cardview_drug_text1"/>
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@id/cardview_drug_text1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 
