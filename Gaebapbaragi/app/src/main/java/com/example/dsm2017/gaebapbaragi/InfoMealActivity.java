@@ -24,6 +24,9 @@ public class InfoMealActivity extends AppCompatActivity {
         infoMealArrayList.add(new item("03/28","0.3"));
         infoMealArrayList.add(new item("03/28","0.5"));
         infoMealArrayList.add(new item("03/29","0.5"));
+        infoMealArrayList.add(new item("03/30","1.0"));
+        infoMealArrayList.add(new item("03/31","0.3"));
+        infoMealArrayList.add(new item("03/31","0.7"));
 
 //        infoMealActivity.setHasFixedSize(true);
 

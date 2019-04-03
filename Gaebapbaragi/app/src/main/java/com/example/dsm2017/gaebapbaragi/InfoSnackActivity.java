@@ -25,6 +25,10 @@ public class InfoSnackActivity extends AppCompatActivity {
         infoSnackArrayList.add(new item("껌", "03/28", "2"));
         infoSnackArrayList.add(new item("저키", "03/28", "5"));
         infoSnackArrayList.add(new item("소세지", "03/29", "1"));
+        infoSnackArrayList.add(new item("껌", "03/29", "1"));
+        infoSnackArrayList.add(new item("저키", "03/30", "5"));
+        infoSnackArrayList.add(new item("저키", "03/30", "5"));
+        infoSnackArrayList.add(new item("껌", "03/31", "1"));
 
         infoSnackActivity.setHasFixedSize(true);
 
