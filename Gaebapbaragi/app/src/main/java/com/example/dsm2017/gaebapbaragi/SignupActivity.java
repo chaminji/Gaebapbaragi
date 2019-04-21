@@ -40,7 +40,7 @@ public class SignupActivity extends AppCompatActivity{
                 } else if(editText_signup_pw_check.getText().toString().length() == 0){
                     Toast.makeText(SignupActivity.this, "PASSWORD를 한 번 더 입력하세요!", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (editText_signup_pw.getText().toString().length() == editText_signup_pw_check.getText().toString().length()) {
+                    if (editText_signup_pw.getText().toString().equals(editText_signup_pw_check.getText().toString())) {
                         Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                         startActivity(intent);
                         Toast.makeText(getApplicationContext(), "회원가입 성공!", Toast.LENGTH_SHORT).show();

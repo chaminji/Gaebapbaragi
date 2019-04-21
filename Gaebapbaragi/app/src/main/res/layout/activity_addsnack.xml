@@ -57,21 +57,25 @@
         android:id="@+id/addsnack_constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/addsnack_btn1"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="취소"
-            app:layout_constraintRight_toLeftOf="@id/addsnack_btn2" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/addsnack_btn2"/>
 
         <Button
             android:id="@+id/addsnack_btn2"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="확인"
-            app:layout_constraintLeft_toRightOf="@id/addsnack_btn1"/>
+            app:layout_constraintStart_toStartOf="@id/addsnack_btn2"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 
