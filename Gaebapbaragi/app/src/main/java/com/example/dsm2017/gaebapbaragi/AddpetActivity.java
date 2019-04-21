@@ -21,7 +21,5 @@ public class AddpetActivity extends AppCompatActivity {
         Button addpet_btn = findViewById(R.id.addpet_btn);
         RadioGroup addpet_radio_group = findViewById(R.id.addpet_radio);
 
-
-
     }
 }
