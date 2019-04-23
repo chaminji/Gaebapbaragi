@@ -55,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="나이를 적어주세요"
+            android:inputType="number"
             android:layout_margin="20dp"
             app:layout_constraintTop_toBottomOf="@+id/addpet_name"/>
 
@@ -79,7 +80,8 @@
                 android:id="@+id/addpet_radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="남"/>
+                android:text="남"
+                android:checked="true"/>
 
             <RadioButton
                 android:id="@+id/addpet_radio2"

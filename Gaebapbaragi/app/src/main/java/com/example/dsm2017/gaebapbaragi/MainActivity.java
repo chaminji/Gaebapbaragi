@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton ibtn_main_snack = findViewById(R.id.main_snack);
         ImageButton ibtn_main_drug = findViewById(R.id.main_drug);
         ImageButton ibtn_main_others = findViewById(R.id.main_others);
-        FloatingActionButton main_fab = findViewById(R.id.main_fab);
         Spinner spinner = findViewById(R.id.main_spinner);
 
         Glide.with(this).load(this.getResources().getIdentifier("main_meal", "drawable", this.getPackageName())).into(ibtn_main_meal);
@@ -70,13 +69,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        main_fab.setOnClickListener(new FloatingActionButton.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
         spinnerArrayList = new ArrayList<>();
         spinnerArrayList.add("댕댕이");
         spinnerArrayList.add("댕댕쓰");
@@ -95,6 +87,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+    }
+
+    public void firstclick(View v){
+        Intent intent = new Intent(MainActivity.this, AddmealActivity.class);
+        startActivity(intent);
+    }
+
+    public void secondclick(View v){
+        Intent intent = new Intent(MainActivity.this, AddsnackActivity.class);
+        startActivity(intent);
+    }
+
+    public void thirdclick(View v){
+        Intent intent = new Intent(MainActivity.this, AdddrugActivity.class);
+        startActivity(intent);
+    }
+
+    public void forthclick(View v){
+        Intent intent = new Intent(MainActivity.this, AddpetActivity.class);
+        startActivity(intent);
     }
 
     @Override

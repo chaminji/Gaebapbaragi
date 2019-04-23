@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity" />
+
         <activity android:name=".LoginActivity"/>
 
         <activity android:name=".SignupActivity"/>
@@ -31,7 +33,13 @@
 
         <activity android:name=".InformationActivity"/>
 
-        <activity android:name=".MainActivity" />
+        <activity android:name=".AddmealActivity"/>
+
+        <activity android:name=".AddsnackActivity"/>
+
+        <activity android:name=".AdddrugActivity"/>
+
+        <activity android:name=".AddpetActivity"/>
 
     </application>
 

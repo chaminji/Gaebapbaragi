@@ -67,11 +67,6 @@
         android:id="@+id/main_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu_animationDelayPerItem="50"
-        app:menu_backgroundColor="@android:color/transparent"
-        app:menu_buttonSpacing="5dp"
         app:menu_colorNormal="@color/colorPrimaryDark"
         app:menu_colorPressed="#FFDBC4"
         app:menu_fab_size="normal"
@@ -79,37 +74,44 @@
         app:menu_openDirection="up"
         app:menu_shadowColor="#66000000"
         app:menu_shadowRadius="4dp"
-        app:menu_showShadow="true">
+        app:menu_showShadow="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/main_fab_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="forthclick"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/main_fab_drug"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/main_fab_drug"
-            app:menu_icon="@drawable/main_fab_drug"
+            android:onClick="thirdclick"
             app:fab_colorNormal="@color/colorPrimary"
             app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini" />
+            app:menu_icon="@drawable/main_fab_drug" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/main_fab_snack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/main_fab_snack"
-            app:menu_icon="@drawable/main_fab_snack"
+            android:onClick="secondclick"
             app:fab_colorNormal="@color/colorPrimary"
             app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini" />
+            app:menu_icon="@drawable/main_fab_snack" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/main_fab_meal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/main_fab_meal"
-            app:menu_icon="@drawable/main_fab_meal"
+            android:onClick="firstclick"
             app:fab_colorNormal="@color/colorPrimary"
             app:fab_colorPressed="@color/colorPrimaryDark"
-            app:fab_size="mini" />
+            app:menu_icon="@drawable/main_fab_meal" />
 
     </com.github.clans.fab.FloatingActionMenu>
 

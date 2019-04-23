@@ -37,9 +37,10 @@
             android:id="@+id/addmeal_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
+            android:layout_margin="40dp"
+            android:inputType="numberDecimal"
             android:gravity="center"
-            android:hint="먹은 사료의 양을 적어주세요"
+            android:hint="먹은 사료의 양을 적어주세요(EX) 0.3(그릇)"
             app:layout_constraintTop_toBottomOf="@+id/addmeal_meal" />
 
     </android.support.constraint.ConstraintLayout>
