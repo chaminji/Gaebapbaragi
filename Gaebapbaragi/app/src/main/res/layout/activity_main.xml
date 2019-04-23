@@ -83,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="forthclick"
+            android:src="@drawable/fab_add"
             app:fab_colorNormal="@color/colorPrimary"
             app:fab_colorPressed="@color/colorPrimaryDark" />
 
@@ -91,27 +92,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="thirdclick"
+            android:src="@drawable/main_fab_drug"
             app:fab_colorNormal="@color/colorPrimary"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:menu_icon="@drawable/main_fab_drug" />
+            app:fab_colorPressed="@color/colorPrimaryDark" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/main_fab_snack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="secondclick"
+            android:src="@drawable/main_fab_snack"
             app:fab_colorNormal="@color/colorPrimary"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:menu_icon="@drawable/main_fab_snack" />
+            app:fab_colorPressed="@color/colorPrimaryDark" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/main_fab_meal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="firstclick"
+            android:src="@drawable/main_fab_meal"
             app:fab_colorNormal="@color/colorPrimary"
-            app:fab_colorPressed="@color/colorPrimaryDark"
-            app:menu_icon="@drawable/main_fab_meal" />
+            app:fab_colorPressed="@color/colorPrimaryDark" />
 
     </com.github.clans.fab.FloatingActionMenu>
 

@@ -18,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/infomeal_title"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/colorPrimaryDark"/>
 
-    </android.support.v7.widget.RecyclerView>
 </android.support.constraint.ConstraintLayout>

@@ -50,8 +50,17 @@ public class InfoMealActivity extends AppCompatActivity {
             return mealdate;
         }
 
+        public void setMealdate(String mealdate) {
+            this.mealdate = mealdate;
+        }
+
         public String getMealcnt() {
             return mealcnt;
         }
+
+        public void setMealcnt(String mealcnt) {
+            this.mealcnt = mealcnt;
+        }
+
     }
 }

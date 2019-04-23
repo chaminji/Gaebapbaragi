@@ -52,8 +52,16 @@ public class InfoDrugActivity extends AppCompatActivity {
             return drugdate;
         }
 
+        public void setDrugdate(String drugdate) {
+            this.drugdate = drugdate;
+        }
+
         public String getDrugcnt() {
             return drugcnt;
+        }
+
+        public void setDrugcnt(String drugcnt) {
+            this.drugcnt = drugcnt;
         }
     }
 }
