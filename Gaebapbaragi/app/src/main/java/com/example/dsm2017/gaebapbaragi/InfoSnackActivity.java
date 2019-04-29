@@ -5,7 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class InfoSnackActivity extends AppCompatActivity {
 
@@ -21,16 +24,12 @@ public class InfoSnackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_infosnack);
         infoSnackActivity = findViewById(R.id.infosnack_recycler);
 
-        infoSnackArrayList = new ArrayList<>();
-        infoSnackArrayList.add(new item("껌", "03/28", "2"));
-        infoSnackArrayList.add(new item("저키", "03/28", "5"));
-        infoSnackArrayList.add(new item("소세지", "03/29", "1"));
-        infoSnackArrayList.add(new item("껌", "03/29", "1"));
-        infoSnackArrayList.add(new item("저키", "03/30", "5"));
-        infoSnackArrayList.add(new item("저키", "03/30", "5"));
-        infoSnackArrayList.add(new item("껌", "03/31", "1"));
+        DateFormat sdFormat = new SimpleDateFormat("MM-dd");
+        Date nowDate = new Date();
+        String today = sdFormat.format(nowDate);
 
-        infoSnackActivity.setHasFixedSize(true);
+        infoSnackArrayList = new ArrayList<>();
+        infoSnackArrayList.add(new item("껌", today, "2"));
 
         infoSnackLayoutManager = new LinearLayoutManager(this);
         infoSnackActivity.setLayoutManager(infoSnackLayoutManager);
@@ -51,7 +50,7 @@ public class InfoSnackActivity extends AppCompatActivity {
         }
 
         public String getSnackname() {
-            return snackdate;
+            return snackname;
         }
 
         public String getSnackdate() {

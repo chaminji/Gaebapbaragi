@@ -4,7 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class InfoMealActivity extends AppCompatActivity {
 
@@ -20,15 +25,12 @@ public class InfoMealActivity extends AppCompatActivity {
         setContentView(R.layout.activity_infomeal);
         infoMealActivity = (RecyclerView) findViewById(R.id.infomeal_recycler);
 
-        infoMealArrayList = new ArrayList<>();
-        infoMealArrayList.add(new item("03/28","0.3"));
-        infoMealArrayList.add(new item("03/28","0.5"));
-        infoMealArrayList.add(new item("03/29","0.5"));
-        infoMealArrayList.add(new item("03/30","1.0"));
-        infoMealArrayList.add(new item("03/31","0.3"));
-        infoMealArrayList.add(new item("03/31","0.7"));
+        DateFormat sdFormat = new SimpleDateFormat("MM-dd");
+        Date nowDate = new Date();
+        String today = sdFormat.format(nowDate);
 
-//        infoMealActivity.setHasFixedSize(true);
+        infoMealArrayList = new ArrayList<>();
+        infoMealArrayList.add(new item(today,"0.3"));
 
         infoMealLayoutManager = new LinearLayoutManager(this);
         infoMealActivity.setLayoutManager(infoMealLayoutManager);
