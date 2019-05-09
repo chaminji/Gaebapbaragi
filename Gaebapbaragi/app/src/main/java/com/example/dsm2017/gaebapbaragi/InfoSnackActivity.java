@@ -24,12 +24,8 @@ public class InfoSnackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_infosnack);
         infoSnackActivity = findViewById(R.id.infosnack_recycler);
 
-        DateFormat sdFormat = new SimpleDateFormat("MM-dd");
-        Date nowDate = new Date();
-        String today = sdFormat.format(nowDate);
-
         infoSnackArrayList = new ArrayList<>();
-        infoSnackArrayList.add(new item("껌", today, "2"));
+        infoSnackArrayList.add(new item("껌", "04-25", "2"));
 
         infoSnackLayoutManager = new LinearLayoutManager(this);
         infoSnackActivity.setLayoutManager(infoSnackLayoutManager);

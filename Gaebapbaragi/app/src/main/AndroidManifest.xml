@@ -35,6 +35,8 @@
 
         <activity android:name=".InformationActivity"/>
 
+        <activity android:name=".InformationViewActivity"/>
+
         <activity android:name=".AddmealActivity"/>
 
         <activity android:name=".AddsnackActivity"/>

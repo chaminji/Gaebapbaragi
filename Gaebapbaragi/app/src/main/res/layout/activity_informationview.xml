@@ -13,7 +13,6 @@
         android:text="INFORMATION"
         android:textSize="35dp" />
 
-
     <TextView
         android:id="@+id/viewinformation_content"
         android:layout_width="match_parent"

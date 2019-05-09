@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
 public class InfoMealActivity extends AppCompatActivity {

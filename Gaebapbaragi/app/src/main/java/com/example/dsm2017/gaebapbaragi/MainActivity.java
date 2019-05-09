@@ -1,11 +1,9 @@
 package com.example.dsm2017.gaebapbaragi;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -13,7 +11,6 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import com.bumptech.glide.Glide;
 
-import java.security.cert.Extension;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -64,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ibtn_main_others.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,InformationActivity.class);
+                Intent intent = new Intent(MainActivity.this, InformationActivity.class);
                 startActivity(intent);
             }
         });
