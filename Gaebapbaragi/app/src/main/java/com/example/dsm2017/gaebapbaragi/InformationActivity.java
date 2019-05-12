@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -63,6 +64,26 @@ public class InformationActivity extends AppCompatActivity {
 
         informationAdapter = new InformationAdapter(informationArrayList);
         information_recycler.setAdapter(informationAdapter);
+
+        information_recycler.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), information_recycler, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(getApplicationContext(), InformationViewActivity.class);
+                if (position == 0) {
+                    intent.putExtra("title", title1);
+                    intent.putExtra("content", content1);
+                } else {
+                    intent.putExtra("title", title2);
+                    intent.putExtra("content", content2);
+                }
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+
+            }
+        }));
     }
 
     public class item {
@@ -74,13 +95,17 @@ public class InformationActivity extends AppCompatActivity {
             this.infocontent = infocontent;
         }
 
-        public String getInfotitle() { return infotitle; }
+        public String getInfotitle() {
+            return infotitle;
+        }
 
         public void setInfotitle(String infotitle) {
             this.infotitle = infotitle;
         }
 
-        public String getInfocontent() { return infocontent; }
+        public String getInfocontent() {
+            return infocontent;
+        }
 
         public void setInfocontent(String infocontent) {
             this.infocontent = infocontent;

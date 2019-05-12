@@ -17,7 +17,6 @@ public class AddmealActivity extends AppCompatActivity {
         final EditText addmeal_edittext = findViewById(R.id.addmeal_edittext);
         Button addmeal_btn_submit = findViewById(R.id.addmeal_btn2);
         Button addmeal_btn_cancel = findViewById(R.id.addmeal_btn1);
-        final String am_edit = addmeal_edittext.getText().toString();
 
         addmeal_btn_cancel.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -31,15 +30,14 @@ public class AddmealActivity extends AppCompatActivity {
         addmeal_btn_submit.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-            if (am_edit.length() == 0) {
+            if (addmeal_edittext.getText().toString().length() == 0) {
                 Toast.makeText(getApplicationContext(), "먹은 양을 입력하세요", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getApplicationContext(), "먹은 식사의 양이 " + am_edit + "만큼 증가했습니다.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "먹은 식사의 양이 " + addmeal_edittext.getText().toString() + "만큼 증가했습니다.", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(AddmealActivity.this, InfoMealActivity.class);
                 startActivity(intent);
             }
             }
         });
-
     }
 }
