@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         spinnerArrayList = new ArrayList<>();
         spinnerArrayList.add("댕댕이");
-        spinnerArrayList.add("댕댕쓰");
 
         spinnerArrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, spinnerArrayList);
 

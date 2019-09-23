@@ -37,6 +37,7 @@ public class AddpetActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "성별을 선택하세요", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(AddpetActivity.this, MainActivity.class);
+                    Toast.makeText(getApplicationContext(), addpet_name.getText().toString() + "의 정보가 추가 되었습니다.", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }
             }

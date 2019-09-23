@@ -10,7 +10,10 @@
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/main_spinner"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
@@ -28,7 +31,9 @@
             android:layout_margin="20dp"
             android:adjustViewBounds="true"
             android:background="@drawable/main_square"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageButton
             android:id="@+id/main_snack"
@@ -38,7 +43,9 @@
             android:adjustViewBounds="true"
             android:background="@drawable/main_square"
             android:scaleType="fitCenter"
-            app:layout_constraintStart_toEndOf="@+id/main_meal" />
+            app:layout_constraintStart_toEndOf="@+id/main_meal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageButton
             android:id="@+id/main_drug"
@@ -48,7 +55,9 @@
             android:adjustViewBounds="true"
             android:background="@drawable/main_square"
             android:scaleType="fitCenter"
-            app:layout_constraintTop_toBottomOf="@+id/main_meal" />
+            app:layout_constraintTop_toBottomOf="@+id/main_meal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <ImageButton
             android:id="@+id/main_others"
@@ -59,7 +68,9 @@
             android:background="@drawable/main_square"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toEndOf="@+id/main_drug"
-            app:layout_constraintTop_toBottomOf="@+id/main_snack" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_snack"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 

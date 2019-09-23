@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.ViewHolder> {
 
-    private ArrayList<InformationActivity.item> mInfoDataset;
+    private ArrayList<InformationActivity.infoItem> mInfoDataset;
 
-    public InformationAdapter(ArrayList<InformationActivity.item> myInfoDataset) {
+    public InformationAdapter(ArrayList<InformationActivity.infoItem> myInfoDataset) {
         mInfoDataset = myInfoDataset;
     }
 

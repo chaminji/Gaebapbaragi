@@ -15,7 +15,7 @@ public class InformationActivity extends AppCompatActivity {
     RecyclerView.Adapter informationAdapter;
     RecyclerView.LayoutManager informationLayoutManager;
 
-    private ArrayList<item> informationArrayList;
+    private ArrayList<infoItem> informationArrayList;
 
     String title1 = "강아지가 삼켜버릴 수 있는 위험한 물건 9가지";
     String title2 = "강아지 발바닥 털 자주 잘라주어야 하는 이유";
@@ -56,8 +56,8 @@ public class InformationActivity extends AppCompatActivity {
         information_recycler = findViewById(R.id.information_recycler);
 
         informationArrayList = new ArrayList<>();
-        informationArrayList.add(new item(title1, content1));
-        informationArrayList.add(new item(title2, content2));
+        informationArrayList.add(new infoItem(title1, content1));
+        informationArrayList.add(new infoItem(title2, content2));
 
         informationLayoutManager = new LinearLayoutManager(this);
         information_recycler.setLayoutManager(informationLayoutManager);
@@ -86,11 +86,11 @@ public class InformationActivity extends AppCompatActivity {
         }));
     }
 
-    public class item {
+    public class infoItem {
         String infotitle;
         String infocontent;
 
-        public item(String infotitle, String infocontent) {
+        public infoItem(String infotitle, String infocontent) {
             this.infotitle = infotitle;
             this.infocontent = infocontent;
         }

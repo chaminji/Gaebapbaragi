@@ -20,7 +20,10 @@
             android:layout_height="wrap_content"
             android:text="SIGNUP"
             android:textSize="35dp"
-            android:gravity="center"/>
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageView
             android:id="@+id/signup_circle"
@@ -97,15 +100,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="취소" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="취소"
+                android:background="@drawable/btn_bgd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <Button
                 android:id="@+id/signup_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="확인"
-                app:layout_constraintStart_toEndOf="@+id/signup_cancel" />
+                android:background="@drawable/btn_bgd"
+                app:layout_constraintStart_toEndOf="@+id/signup_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
 

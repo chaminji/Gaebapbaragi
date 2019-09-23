@@ -10,7 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
+
+        <!--android:usesCleartextTraffic="true" - 보안이 되지 않은 프로토콜도 사용 가능-->
 
         <activity android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
